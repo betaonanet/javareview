@@ -6,5 +6,9 @@ public class App {
         
         System.out.println(nome);
 
+        TiraAcento txt = new TiraAcento("SAÚDE");
+        System.out.println("Resultado: "+ txt.textofinal);
+
+
     }
 }
