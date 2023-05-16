@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Olá, Mundo Maravilhoso");
@@ -6,9 +8,16 @@ public class App {
         
         System.out.println(nome);
 
-        TiraAcento txt = new TiraAcento("SAÚDE");
-        System.out.println("Resultado: "+ txt.textofinal);
+        
+        
+        Scanner sc = new Scanner(System.in);
+            System.out.print("Digite o texto: ");
+            String texto = sc.nextLine(); 
+        
+        sc.close();
 
+        TiraAcento txt = new TiraAcento(texto.toUpperCase());
+        System.out.println("Resultado: "+ txt.textofinal);
 
     }
 }
